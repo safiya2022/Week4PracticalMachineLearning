@@ -23,7 +23,7 @@ You should create a report describing how you built your model, how you used cro
 ## Load and process data
 
 ```{r setup and data processing}
-setwd("C:/Users/09833/Documents/R_training/PraticalMachineLearning")
+
 training      <- read.csv("~/R_training/PraticalMachineLearning/pml-training.csv",
                           na.strings=c("NA","","#DIV/0!"))
 training      <- training [,colSums(is.na(training )) == 0]
