@@ -479,7 +479,7 @@ confusionMatrix(pred, inTest$classe)</code></pre>
 ## Detection Rate         0.2845   0.1922   0.1730   0.1589   0.1833
 ## Detection Prevalence   0.2856   0.1934   0.1781   0.1596   0.1833
 ## Balanced Accuracy      0.9992   0.9958   0.9930   0.9846   0.9986</code></pre>
-<p>The Accuracy is 0.9939 and within the 95% CI : (0.9915, 0.9957).</p>
+<p>The Accuracy is 0.9918 and within the 95% CI : (0.9892, 0.994).</p>
 <pre class="r"><code>model$finalModel</code></pre>
 <pre><code>## 
 ## Call:
@@ -522,7 +522,7 @@ confusionMatrix(pred, inTest$classe)</code></pre>
 ## total_accel_dumbbell   31.42
 ## accel_dumbbell_x       30.93
 ## yaw_dumbbell           29.63</code></pre>
-<p>The OOB estimate of error rate is very low at 0.74%, so our model fit
+<p>The OOB estimate of error rate is very low at 0.63%, so our model fit
 is reasonable.</p>
 <p>Using testdata to apply the model and make prediction</p>
 <pre class="r"><code>testpredict &lt;- predict(model, newdata=testdata)
